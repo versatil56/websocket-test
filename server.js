@@ -10,7 +10,7 @@ var WebSocketServer = require('ws').Server
         console.log('Received from client: %s', message);
         ws.send(JSON.stringify([{
             status: "Accepted",
-            currentTime: "1970-01-01T10:05:08+01:00",
+            currentTime: "2021-09-13T15:37:08+01:00",
             interval: 1
         }]));
     });
