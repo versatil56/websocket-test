@@ -8,10 +8,10 @@ var WebSocketServer = require('ws').Server
     wss.on('connection', function(ws) {
         ws.on('message', function(message) {
         console.log('Received from client: %s', message);
-        ws.send("resopnse",{
+        ws.send(JSON.stringify({
             status: "Accepted",
             currentTime: Date.now(),
             interval: 0
-        });
+        }));
     });
  });
