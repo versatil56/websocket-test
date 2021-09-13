@@ -1,0 +1,8 @@
+{
+  "name": "my-awesome-package",
+  "version": "1.0.0",
+  "dependencies": {
+    "ws": "^8.2.1",
+    "wscat": "^5.0.0"
+  }
+}
