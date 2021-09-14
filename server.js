@@ -11,7 +11,7 @@ var WebSocketServer = require('ws').Server
         ws.send(JSON.stringify([{
             status: "Accepted",
             currentTime: "2021-09-13T15:37:08+01:00",
-            interval: 1
+            interval: 300
         }]));
     });
  });
