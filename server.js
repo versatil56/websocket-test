@@ -8,7 +8,7 @@ var WebSocketServer = require('ws').Server
     wss.on('connection', function(ws) {
         ws.on('message', function(message) {
         console.log('Received from client: %s', message);
-        ws.send(JSON.stringify([3,"BootNotification",{
+        ws.send(JSON.stringify([3,1,"BootNotification",{
             status: "Accepted",
             currentTime: new Date().toISOString(),
             interval: 300
