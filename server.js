@@ -6,7 +6,7 @@ var Msg = '';
 var WebSocketServer = require('ws').Server
     , wss = new WebSocketServer({port: PORT});
     wss.on('connection', function(ws) {
-        console.log("LOL: %s", JSON.stringify(ws))
+        console.log("Clients %s:", JSON.stringify(wss.clients));
         ws.on('message', function(message) {
         console.log('Received from client: %s', message);
         ws.send(JSON.stringify([3,"1",{
